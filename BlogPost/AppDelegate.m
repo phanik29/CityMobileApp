@@ -7,12 +7,31 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
+#import <RestKit/RestKit.h>
 
 @implementation AppDelegate
 
+@synthesize window;
+@synthesize locationManager;
+@synthesize viewController;
+@synthesize data;
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    data = [[NSMutableArray alloc] init];
+  /*  self.locationManager = [[CLLocationManager alloc] init] ;
+	if ( self.locationManager.locationServicesEnabled ) {
+		NSLog( @"Starting CLLocationManager" );
+		self.locationManager.delegate = self;
+		self.locationManager.distanceFilter = 1000;
+	    [self.locationManager startUpdatingLocation];
+	}
+	
+    // Override point for customization after app launch
+    [window addSubview:viewController.view];
+    [window makeKeyAndVisible];*/
     return YES;
 }
 							
@@ -42,5 +61,29 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+/*
+#pragma mark CLLocationManagerDelegate Methods
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+	
+	NSLog( @"new location = %@", [newLocation description] );
+	MKCoordinateSpan span;
+	span.latitudeDelta = 0.2;
+	span.longitudeDelta = 0.2;
+    
+	MKCoordinateRegion region;
+	region.span = span;
+	region.center = newLocation.coordinate;
+	
+	//[viewController.mapView setRegion:region animated:YES];
+	//viewController.mapView.showsUserLocation = YES;
+    [viewController.latitude setText:[NSString stringWithFormat:@"%f", newLocation.coordinate.latitude]];
+	//viewController.latitude.text = [NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
+    NSLog( @"new location = %@", viewController.latitude.text);
+	//viewController.longitutudeLabel.text = [NSString stringWithFormat:@"%f", newLocation.coordinate.longitude];
+	
+}*/
+
+
 
 @end

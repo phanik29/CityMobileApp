@@ -7,9 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "AddPostViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+
+   UIWindow *window;
+	
+   CLLocationManager *locationManager;
+
+   AddPostViewController *viewController;
+    
+    NSMutableArray *data;
+    
+        
+}
+
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet CLLocationManager *locationManager;
+@property (strong, nonatomic) IBOutlet AddPostViewController *viewController;
+
+@property (nonatomic, retain) NSMutableArray *data;
 
 @end

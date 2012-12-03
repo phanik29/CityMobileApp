@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD3F6FFA1656D5EB00AC5382 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3F6FF91656D5EB00AC5382 /* CoreLocation.framework */; };
+		FD3F70321657393500AC5382 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3F70311657393500AC5382 /* MapKit.framework */; };
 		FD61277E163CAC160074BF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61277D163CAC160074BF54 /* UIKit.framework */; };
 		FD612780163CAC160074BF54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD61277F163CAC160074BF54 /* Foundation.framework */; };
 		FD612782163CAC160074BF54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD612781163CAC160074BF54 /* CoreGraphics.framework */; };
@@ -17,11 +19,69 @@
 		FD612792163CAC160074BF54 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD612791163CAC160074BF54 /* Default@2x.png */; };
 		FD612794163CAC160074BF54 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD612793163CAC160074BF54 /* Default-568h@2x.png */; };
 		FD612797163CAC160074BF54 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD612795163CAC160074BF54 /* MainStoryboard.storyboard */; };
-		FD61279A163CAC160074BF54 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD612799163CAC160074BF54 /* MasterViewController.m */; };
-		FD61279D163CAC160074BF54 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61279C163CAC160074BF54 /* DetailViewController.m */; };
+		FD6127BA163CCD010074BF54 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127AF163CBA2B0074BF54 /* libRestKit.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		FD6127C2163CCF680074BF54 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127BB163CCF680074BF54 /* CFNetwork.framework */; };
+		FD6127C3163CCF680074BF54 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127BC163CCF680074BF54 /* CoreData.framework */; };
+		FD6127C4163CCF680074BF54 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127BD163CCF680074BF54 /* libxml2.dylib */; };
+		FD6127C5163CCF680074BF54 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127BE163CCF680074BF54 /* MobileCoreServices.framework */; };
+		FD6127C6163CCF680074BF54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127BF163CCF680074BF54 /* QuartzCore.framework */; };
+		FD6127C7163CCF680074BF54 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127C0163CCF680074BF54 /* Security.framework */; };
+		FD6127C8163CCF680074BF54 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6127C1163CCF680074BF54 /* SystemConfiguration.framework */; };
+		FD6127CF163CD58A0074BF54 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6127CE163CD58A0074BF54 /* Post.m */; };
+		FD7EC12F1652E95800790BC2 /* AddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7EC12E1652E95800790BC2 /* AddPostViewController.m */; };
+		FD8250CE1662AFDF009D6D92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8250CD1662AFDF009D6D92 /* ViewController.m */; };
+		FD8250D016634B24009D6D92 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = FD8250CF16634B24009D6D92 /* image.png */; };
+		FDB3CECC1649C1B500268DD8 /* PostDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB3CECB1649C1B500268DD8 /* PostDataController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FD6127AE163CBA2B0074BF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		FD6127B0163CBA2B0074BF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		FD6127B2163CBA2B0074BF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		FD6127B4163CBA2B0074BF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		FD6127B6163CBA2B0074BF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		FD6127CB163CD07E0074BF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FD3F6FF91656D5EB00AC5382 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FD3F70311657393500AC5382 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FD612779163CAC160074BF54 /* BlogPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD61277D163CAC160074BF54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FD61277F163CAC160074BF54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,10 +96,23 @@
 		FD612791163CAC160074BF54 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FD612793163CAC160074BF54 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FD612796163CAC160074BF54 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		FD612798163CAC160074BF54 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		FD612799163CAC160074BF54 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		FD61279B163CAC160074BF54 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		FD61279C163CAC160074BF54 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = BlogPost/RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		FD6127BB163CCF680074BF54 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FD6127BC163CCF680074BF54 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FD6127BD163CCF680074BF54 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		FD6127BE163CCF680074BF54 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FD6127BF163CCF680074BF54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FD6127C0163CCF680074BF54 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FD6127C1163CCF680074BF54 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FD6127CD163CD58A0074BF54 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		FD6127CE163CD58A0074BF54 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		FD7EC12D1652E95800790BC2 /* AddPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostViewController.h; sourceTree = "<group>"; };
+		FD7EC12E1652E95800790BC2 /* AddPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostViewController.m; sourceTree = "<group>"; };
+		FD8250CC1662AFDF009D6D92 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD8250CD1662AFDF009D6D92 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD8250CF16634B24009D6D92 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		FDB3CECA1649C1B500268DD8 /* PostDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDataController.h; sourceTree = "<group>"; };
+		FDB3CECB1649C1B500268DD8 /* PostDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +120,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD3F70321657393500AC5382 /* MapKit.framework in Frameworks */,
+				FD3F6FFA1656D5EB00AC5382 /* CoreLocation.framework in Frameworks */,
+				FD6127C2163CCF680074BF54 /* CFNetwork.framework in Frameworks */,
+				FD6127C3163CCF680074BF54 /* CoreData.framework in Frameworks */,
+				FD6127C4163CCF680074BF54 /* libxml2.dylib in Frameworks */,
+				FD6127C5163CCF680074BF54 /* MobileCoreServices.framework in Frameworks */,
+				FD6127C6163CCF680074BF54 /* QuartzCore.framework in Frameworks */,
+				FD6127C7163CCF680074BF54 /* Security.framework in Frameworks */,
+				FD6127C8163CCF680074BF54 /* SystemConfiguration.framework in Frameworks */,
+				FD6127BA163CCD010074BF54 /* libRestKit.a in Frameworks */,
 				FD61277E163CAC160074BF54 /* UIKit.framework in Frameworks */,
 				FD612780163CAC160074BF54 /* Foundation.framework in Frameworks */,
 				FD612782163CAC160074BF54 /* CoreGraphics.framework in Frameworks */,
@@ -59,6 +142,16 @@
 		FD61276E163CAC160074BF54 = {
 			isa = PBXGroup;
 			children = (
+				FD3F70311657393500AC5382 /* MapKit.framework */,
+				FD3F6FF91656D5EB00AC5382 /* CoreLocation.framework */,
+				FD6127BB163CCF680074BF54 /* CFNetwork.framework */,
+				FD6127BC163CCF680074BF54 /* CoreData.framework */,
+				FD6127BD163CCF680074BF54 /* libxml2.dylib */,
+				FD6127BE163CCF680074BF54 /* MobileCoreServices.framework */,
+				FD6127BF163CCF680074BF54 /* QuartzCore.framework */,
+				FD6127C0163CCF680074BF54 /* Security.framework */,
+				FD6127C1163CCF680074BF54 /* SystemConfiguration.framework */,
+				FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */,
 				FD612783163CAC160074BF54 /* BlogPost */,
 				FD61277C163CAC160074BF54 /* Frameworks */,
 				FD61277A163CAC160074BF54 /* Products */,
@@ -88,11 +181,15 @@
 			children = (
 				FD61278C163CAC160074BF54 /* AppDelegate.h */,
 				FD61278D163CAC160074BF54 /* AppDelegate.m */,
+				FD6127CD163CD58A0074BF54 /* Post.h */,
+				FD6127CE163CD58A0074BF54 /* Post.m */,
+				FDB3CECA1649C1B500268DD8 /* PostDataController.h */,
+				FDB3CECB1649C1B500268DD8 /* PostDataController.m */,
 				FD612795163CAC160074BF54 /* MainStoryboard.storyboard */,
-				FD612798163CAC160074BF54 /* MasterViewController.h */,
-				FD612799163CAC160074BF54 /* MasterViewController.m */,
-				FD61279B163CAC160074BF54 /* DetailViewController.h */,
-				FD61279C163CAC160074BF54 /* DetailViewController.m */,
+				FD8250CC1662AFDF009D6D92 /* ViewController.h */,
+				FD8250CD1662AFDF009D6D92 /* ViewController.m */,
+				FD7EC12D1652E95800790BC2 /* AddPostViewController.h */,
+				FD7EC12E1652E95800790BC2 /* AddPostViewController.m */,
 				FD612784163CAC160074BF54 /* Supporting Files */,
 			);
 			path = BlogPost;
@@ -101,6 +198,7 @@
 		FD612784163CAC160074BF54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD8250CF16634B24009D6D92 /* image.png */,
 				FD612785163CAC160074BF54 /* BlogPost-Info.plist */,
 				FD612786163CAC160074BF54 /* InfoPlist.strings */,
 				FD612789163CAC160074BF54 /* main.m */,
@@ -110,6 +208,18 @@
 				FD612793163CAC160074BF54 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD6127A4163CBA2A0074BF54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD6127AF163CBA2B0074BF54 /* libRestKit.a */,
+				FD6127B1163CBA2B0074BF54 /* RestKitTests.octest */,
+				FD6127B3163CBA2B0074BF54 /* RestKit.framework */,
+				FD6127B5163CBA2B0074BF54 /* RestKitFrameworkTests.octest */,
+				FD6127B7163CBA2B0074BF54 /* RestKitResources.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FD6127CC163CD07E0074BF54 /* PBXTargetDependency */,
 			);
 			name = BlogPost;
 			productName = BlogPost;
@@ -151,12 +262,56 @@
 			mainGroup = FD61276E163CAC160074BF54;
 			productRefGroup = FD61277A163CAC160074BF54 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FD6127A4163CBA2A0074BF54 /* Products */;
+					ProjectRef = FD6127A3163CBA2A0074BF54 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FD612778163CAC160074BF54 /* BlogPost */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FD6127AF163CBA2B0074BF54 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = FD6127AE163CBA2B0074BF54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD6127B1163CBA2B0074BF54 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = FD6127B0163CBA2B0074BF54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD6127B3163CBA2B0074BF54 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = FD6127B2163CBA2B0074BF54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD6127B5163CBA2B0074BF54 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = FD6127B4163CBA2B0074BF54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FD6127B7163CBA2B0074BF54 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = FD6127B6163CBA2B0074BF54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FD612777163CAC160074BF54 /* Resources */ = {
@@ -168,6 +323,7 @@
 				FD612792163CAC160074BF54 /* Default@2x.png in Resources */,
 				FD612794163CAC160074BF54 /* Default-568h@2x.png in Resources */,
 				FD612797163CAC160074BF54 /* MainStoryboard.storyboard in Resources */,
+				FD8250D016634B24009D6D92 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,12 +336,22 @@
 			files = (
 				FD61278A163CAC160074BF54 /* main.m in Sources */,
 				FD61278E163CAC160074BF54 /* AppDelegate.m in Sources */,
-				FD61279A163CAC160074BF54 /* MasterViewController.m in Sources */,
-				FD61279D163CAC160074BF54 /* DetailViewController.m in Sources */,
+				FD6127CF163CD58A0074BF54 /* Post.m in Sources */,
+				FDB3CECC1649C1B500268DD8 /* PostDataController.m in Sources */,
+				FD7EC12F1652E95800790BC2 /* AddPostViewController.m in Sources */,
+				FD8250CE1662AFDF009D6D92 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6127CC163CD07E0074BF54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = FD6127CB163CD07E0074BF54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FD612786163CAC160074BF54 /* InfoPlist.strings */ = {
@@ -262,7 +428,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlogPost/BlogPost-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "BlogPost/BlogPost-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,7 +442,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlogPost/BlogPost-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "BlogPost/BlogPost-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -298,6 +470,7 @@
 				FD6127A2163CAC160074BF54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
